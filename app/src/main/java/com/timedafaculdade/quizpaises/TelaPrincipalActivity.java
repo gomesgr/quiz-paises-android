@@ -37,7 +37,7 @@ public class TelaPrincipalActivity extends Activity {
         });
 
         BTN_EXIT.setOnClickListener((view) -> {
-            finish();
+            finishAffinity();
         });
 
     }
