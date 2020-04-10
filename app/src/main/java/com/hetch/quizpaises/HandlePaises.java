@@ -1,4 +1,4 @@
-package com.timedafaculdade.quizpaises;
+package com.hetch.quizpaises;
 
 import android.util.Log;
 
@@ -29,6 +29,12 @@ public class HandlePaises {
         for (int i = 0; i < amount; i++) {
             int rand = new Random().nextInt(mapSize);
             Log.i(TAG, "getCountriesRandomly: index we're on " + i + " rand generated " + rand);
+                if ( newKeys.contains(keys.get(rand))
+                        || newValues.contains(values.get(rand))) {
+                    Log.d(TAG, "getCountriesRandomly: doubled value on index" + i);
+                    --i;
+                    continue;
+                }
             newKeys.add((String) keys.get(rand));
             newValues.add((Integer) values.get(rand));
 

@@ -1,4 +1,4 @@
-package com.timedafaculdade.quizpaises;
+package com.hetch.quizpaises;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.timedafaculdade.quizpaises;
+package com.hetch.quizpaises;
 
 import java.util.HashMap;
 import java.util.Map;
